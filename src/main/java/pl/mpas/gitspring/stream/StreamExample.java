@@ -31,8 +31,8 @@ public class StreamExample {
                     return s.length() >= 4; })
                 .map(s -> {
                     log.info("mapping object [{}]", s);
-                    return s.length();});
-//                .collect(Collectors.toList())
+                    return s.length();})
+                .collect(Collectors.toList());
 //                .forEach(integer -> System.out.println("number: " + integer));
     }
 }

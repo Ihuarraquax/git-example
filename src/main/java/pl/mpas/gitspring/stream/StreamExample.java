@@ -27,7 +27,7 @@ public class StreamExample {
         // zbierz to do listy
         colors.stream()
                 .filter((String s) -> {
-                    log.info("testing object [{}]", s);
+                    log.info("testing object [{}], passed ? [{}]", s, s.length() >= 4);
                     return s.length() >= 4; })
                 .map(s -> {
                     log.info("mapping object [{}]", s);

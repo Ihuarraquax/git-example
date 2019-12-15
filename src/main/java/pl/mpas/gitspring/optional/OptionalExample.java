@@ -18,6 +18,7 @@ public class OptionalExample {
     }
 
     private static Optional<String> findNick() {
+        System.out.println("searching for nick...");
         return Optional.empty();
     }
 }
